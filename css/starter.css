@@ -211,6 +211,7 @@ footer{
 
   #logo {
     width: 100vw;
+    animation: none;
     /* color: white; */
     /* animation-name: changeBackground; */
     /* animation-duration: 3s; */
