@@ -1,3 +1,9 @@
+
+@keyframes changeBackground {
+  0% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,8 +24,11 @@ header {
   /* min-width: 100vw; */
 }
 
-header img {
+#logo {
   width: 100vw;
+  /* color: white; */
+  animation-name: changeBackground;
+  animation-duration: 3s;
 }
 
 h1 {
@@ -196,4 +205,14 @@ footer{
     max-width: 300px;
   }
 
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+
+  #logo {
+    width: 100vw;
+    /* color: white; */
+    /* animation-name: changeBackground; */
+    /* animation-duration: 3s; */
+  }
 }  /*End the media query*/
